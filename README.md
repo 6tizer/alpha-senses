@@ -178,3 +178,6 @@ MIT — use it, build on it, make it yours.
 ---
 
 *Alpha Senses v1.0 · 2026-02-21*
+
+---
+*Development happens on the `dev` branch. `main` is the stable release branch.*
