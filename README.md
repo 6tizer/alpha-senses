@@ -20,7 +20,7 @@ Agents are already powerful thinkers. But most of them are blind, deaf, and mute
 
 Alpha Senses changes that.
 
-11 modular skills. One install. Your Agent can now **see, hear, draw, speak, and create** — powered by the world's most capable Chinese AI models.
+11 modular skills. One install. Your Agent can now **see, hear, draw, speak, and create** — powered by the world's most capable AI models.
 
 ---
 
