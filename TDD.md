@@ -1,4 +1,4 @@
-# fal.ai Skills 技术设计文档 (TDD)
+# Alpha Senses 技术设计文档 (TDD)
 
 > **目标读者**：Tizer 及开发团队  
 > **文档版本**：v1.0  
@@ -9,7 +9,7 @@
 
 ## 1. 项目概述
 
-**fal.ai Skills** 是 OpenClaw 的多模态能力扩展模块，通过集成 fal.ai 的 AI 服务，让 AI 代理获得"看到"、"理解"、"画出来"的能力。
+**Alpha Senses** 是 OpenClaw 的多模态能力扩展模块，通过集成 fal.ai 的 AI 服务，让 AI 代理获得"看到"、"理解"、"画出来"的能力。
 
 ### MVP 已完成的 3 个 Skills
 
@@ -62,7 +62,7 @@
 
 ### 架构说明（给 Tizer）
 
-fal.ai Skills 像是一家**精品餐厅的外包厨房**：
+Alpha Senses 像是一家**精品餐厅的外包厨房**：
 
 | 层级 | 类比 | 作用 |
 |------|------|------|

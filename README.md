@@ -149,7 +149,7 @@
 ## 文件位置
 
 ```
-projects/fal-skills/
+projects/alpha-senses/
 ├── README.md           # 本文件
 ├── BRIEF-v1.md        # 原始完整计划（来自 Grok/Gemini）
 └── [skills]/          # Skill 实现代码

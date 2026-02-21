@@ -1,4 +1,4 @@
-# fal.ai Skills Batch 2 完成报告
+# Alpha Senses Batch 2 完成报告
 
 > 执行时间: 2026-02-21
 > 执行者: Cooclo
@@ -49,7 +49,7 @@
 ## 任务二：3个新Skills开发 ✅
 
 ### Skill 1: TweetImageGen
-**路径**: `projects/fal-skills/skills/tweet-image-gen/run.py`
+**路径**: `projects/alpha-senses/skills/tweet-image-gen/run.py`
 
 **功能**: 根据推文内容和风格自动生成配图
 
@@ -69,7 +69,7 @@ python run.py --tweet "产品发布" --style minimal --compare
 ---
 
 ### Skill 2: ImageStyler
-**路径**: `projects/fal-skills/skills/image-styler/run.py`
+**路径**: `projects/alpha-senses/skills/image-styler/run.py`
 
 **功能**: 将图片转换成指定艺术风格
 
@@ -90,7 +90,7 @@ python run.py --image ./me.png --style cinematic --compare
 ---
 
 ### Skill 3: TextToSpeech
-**路径**: `projects/fal-skills/skills/text-to-speech/run.py`
+**路径**: `projects/alpha-senses/skills/text-to-speech/run.py`
 
 **功能**: 将文字转换为自然语音音频
 
@@ -111,7 +111,7 @@ python run.py --text "Hello World" --voice male_en --output ./hello.mp3
 ## 任务三：更新现有Skills ✅
 
 ### 更新: IdeaVisualizer
-**路径**: `projects/fal-skills/skills/idea-visualizer/run.py`
+**路径**: `projects/alpha-senses/skills/idea-visualizer/run.py`
 
 **更新内容**:
 - 添加 `--model` 参数支持: `kling`(默认)/`glm`/`grok`
@@ -130,7 +130,7 @@ python run.py --idea "未来汽车" --compare
 ## 文件结构
 
 ```
-projects/fal-skills/
+projects/alpha-senses/
 ├── skills/
 │   ├── tweet-image-gen/
 │   │   └── run.py          # 新: 推文配图生成器

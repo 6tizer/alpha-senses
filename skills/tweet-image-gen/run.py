@@ -369,8 +369,9 @@ def main():
         """
     )
     parser.add_argument(
-        "--tweet", "-t",
-        help="推文/文章内容"
+        "--tweet", "--content", "-t",
+        dest="tweet",
+        help="推文/文章内容 (--content 为 --tweet 的别名)"
     )
     parser.add_argument(
         "--tweet-file", "-f",

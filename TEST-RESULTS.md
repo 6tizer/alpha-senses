@@ -1,4 +1,4 @@
-# fal.ai Skills 测试结果
+# Alpha Senses 测试结果
 
 > 测试时间：2026-02-20
 

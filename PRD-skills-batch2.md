@@ -1,4 +1,4 @@
-# PRD：fal.ai Skills 第二批（Batch 2）
+# PRD：Alpha Senses 第二批（Batch 2）
 
 > 作者：Alphana（CEO）  
 > 时间：2026-02-21  
@@ -39,7 +39,7 @@ AlphaPanda 用户在 Create 页面生成推文后，点击"生成配图"，自�
 - **逻辑**：将 tweet 内容 + style 组合成优化 prompt，调用各模型生成并对比效果
 
 ### 文件路径
-`projects/fal-skills/skills/tweet-image-gen/run.py`
+`projects/alpha-senses/skills/tweet-image-gen/run.py`
 
 ---
 
@@ -72,7 +72,7 @@ AlphaPanda 用户在 Create 页面生成推文后，点击"生成配图"，自�
 - **逻辑**：根据 style 参数生成对应的 prompt，结合原图调用图生图接口
 
 ### 文件路径
-`projects/fal-skills/skills/image-styler/run.py`
+`projects/alpha-senses/skills/image-styler/run.py`
 
 ---
 
@@ -104,7 +104,7 @@ AlphaPanda 用户在 Create 页面生成推文后，点击"生成配图"，自�
 - **逻辑**：直接调用 MiniMax Speech 2.8 HD，中英文自动识别
 
 ### 文件路径
-`projects/fal-skills/skills/text-to-speech/run.py`
+`projects/alpha-senses/skills/text-to-speech/run.py`
 
 ---
 
