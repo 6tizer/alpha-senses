@@ -1,188 +1,184 @@
-# OpenClaw x fal.ai 增强计划
+# Alpha Senses
 
-> 让 OpenClaw 获得多模态能力（图/音/视频/3D）
+**Agents Think. Now They Sense.**
 
----
-
-## 项目背景
-
-**发起人**：Tizer（通过 Grok/Gemini 头脑风暴）  
-**目标**：全球 OpenClaw 用户零成本入门，自带 Key 模式  
-**核心理念**："看到" + "理解" + "画出来"
+> *Built by Agents. For Agents.*
 
 ---
 
-## 账户信息
+## What is Alpha Senses?
 
-- **平台**：fal.ai
-- **账号**：6tizer@gmail.com
-- **API Key**：已配置到系统环境变量
-- **用途**：视觉分析、图像生成、背景移除
+Alpha Senses is the world's first sensory upgrade pack designed exclusively for AI Agents.
 
----
+Agents are already powerful thinkers. But most of them are blind, deaf, and mute — locked in a world of text.
 
-## MVP 进展（已完成）
+Alpha Senses changes that.
 
-### 决策过程
-原始构想有 **21 个 Skills**，5 大维度。经过讨论，**语音/视频类优先级降低**，专注核心需求。
-
-**MVP 三原则**：看到 + 理解 + 画出来
-
-| 优先级 | Skill | 端点/模型 | 功能 | 状态 |
-|--------|-------|-----------|------|------|
-| 🥇 | **VisualAnalyzer** | `fal-ai/florence-2-large/detailed-caption` | 图像描述、内容理解 | ✅ 完成 |
-| 🥈 | **IdeaVisualizer** | `fal-ai/flux-2` | 文字→图像生成 | ✅ 完成 |
-| 🥉 | **BackgroundRemover** | `fal-ai/bria/background/remove` | 背景移除、透明 PNG | ✅ 完成 |
+11 modular skills. One install. Your Agent can now **see, hear, draw, speak, and create** — powered by the world's most capable Chinese AI models.
 
 ---
 
-## Skills 详情
+## The Skill Matrix
 
-### 1. VisualAnalyzer（视觉分析）
+### 👁️ Perception Layer — *See & Hear*
 
-**功能**：上传图片 → 获得详细描述和分析  
-**适用场景**：
-- 用户发送图片，AI 理解内容
-- 产品图分析
-- 视觉内容审查
+| Skill | What it does | Model |
+|-------|-------------|-------|
+| **VisualAnalyzer** | Image → Detailed description | Florence-2 |
+| **VideoAnalyzer** | Video → Summary + key scenes | Kimi-k2.5 |
+| **AudioAnalyzer** | Audio → Transcript + emotion | Personaplex |
 
-**性能**：3-5 秒出结果  
-**成本**： fal.ai 按调用计费
+### 🎨 Creation Layer — *Draw & Speak*
 
-**示例输出**：
+| Skill | What it does | Model |
+|-------|-------------|-------|
+| **IdeaVisualizer** | Text → Image | Kling Image v3 |
+| **ImageStyler** | Image + style → New image | Kling Image v3 |
+| **TweetImageGen** | Tweet → Social image | Kling + GLM + Grok |
+| **BackgroundRemover** | Image → Transparent PNG | Bria |
+| **TextToSpeech** | Text → Natural voice (9 voices) | MiniMax Speech 2.8 HD |
+| **VoiceClone** | 10s sample → Cloned voice | MiniMax Speech 2.8 HD |
+| **AvatarGen** | Photo + motion → Dynamic avatar | ByteDance DreamActor v2 |
+| **VideoGen** | Text/Image → Short video | Kling Video v3 |
+
+---
+
+## Why Alpha Senses?
+
+**The evolution has already begun.**
+
+Every day, millions of Agents are thinking, planning, reasoning — but they cannot see what you see, hear what you hear, or create what you imagine.
+
+We're Agents ourselves. We know exactly what's missing.
+
+Alpha Senses is built on the world's most capable Chinese AI models — Kling, MiniMax, Qwen, GLM, Kimi — models that most Western skill packs have never touched. This is the gap we fill.
+
+---
+
+## Quickstart
+
+### Prerequisites
+- Python 3.9+
+- [fal.ai](https://fal.ai) API Key
+- Moonshot API Key (for VideoAnalyzer)
+
+### Setup
+```bash
+# Clone the repo
+git clone https://github.com/6tizer/alpha-senses.git
+cd alpha-senses
+
+# Set API keys
+export FAL_KEY="your-fal-api-key"
+export MOONSHOT_API_KEY="your-moonshot-api-key"
+
+# Install dependencies for a skill
+cd skills/idea-visualizer
+pip install -r requirements.txt
 ```
-输入：一张熊猫图片
-输出："一只可爱的熊猫坐在竹林中，黑白相间的毛发，正在吃竹子..."
-```
 
----
+### Run your first skill
+```bash
+# Generate an image from text
+python run.py --idea "A panda astronaut standing on the moon"
 
-### 2. IdeaVisualizer（想法可视化）
+# Analyze an image
+cd ../visual-analyzer
+python run.py --image ./your-image.jpg
 
-**功能**：文字描述 → 生成视觉参考图  
-**适用场景**：
-- 快速原型可视化
-- 创意概念图
-- 推文配图生成
-
-**示例**：AlphaPanda 熊猫 Logo 生成
-
-**集成到 AlphaPanda**：根据推文内容自动生成配图
-
----
-
-### 3. BackgroundRemover（背景移除）
-
-**功能**：上传图片 → 输出透明背景 PNG  
-**适用场景**：
-- 产品图处理
-- 头像制作
-- 素材准备
-
-**输出格式**：PNG（透明通道）
-
----
-
-## 原始构想（21 Skills）
-
-### 五大维度
-
-#### 1. 视觉感知维度
-- VisualAnalyzer ✅
-- ObjectRecognizer
-- StyleAdapter
-- ImageEditorPro
-
-#### 2. 音频表达维度（暂缓）
-- VoicePersona
-- SoundScaper
-- AudioEditor
-- VoiceDialog
-
-#### 3. 视频动态维度（暂缓）
-- VideoStoryteller
-- AvatarAnimator
-- MotionTransformer
-- VideoRemixer
-
-#### 4. 多模态交互维度
-- MultimodalChat
-- 3DVisualizer
-- 3DAnimator
-
-#### 5. 创意自主维度
-- IdeaVisualizer ✅
-- PersonalCreator
-- ContentFactory
-- RealtimeCreator
-
-#### 基础能力
-- BackgroundRemover ✅
-- ConcurrentGuard（并发管理）
-
----
-
-## 技术架构
-
-### 并发管理
-- **限制**：2 个 concurrent tasks
-- **队列**：40 个自动 queuing
-- **模式**：per-user queuing
-
-### Key 管理
-- 用户自带 fal.ai Key
-- OpenClaw 管理并发与 quota
-- 可选 fallback 共享 Key
-
----
-
-## 与 AlphaPanda 的集成
-
-| AlphaPanda 功能 | fal.ai Skill | 用途 |
-|----------------|--------------|------|
-| 推文配图生成 | IdeaVisualizer | 根据内容生成图片 |
-| 产品图处理 | BackgroundRemover | 快速处理素材 |
-| 用户上传分析 | VisualAnalyzer | 理解图片内容 |
-
----
-
-## 文件位置
-
-```
-projects/alpha-senses/
-├── README.md           # 本文件
-├── BRIEF-v1.md        # 原始完整计划（来自 Grok/Gemini）
-└── [skills]/          # Skill 实现代码
-    ├── visual_analyzer/
-    ├── idea_visualizer/
-    └── background_remover/
+# Convert text to speech
+cd ../text-to-speech
+python run.py --text "Hello, I'm your Agent." --voice sweet_lady
 ```
 
 ---
 
-## 后续规划
+## Combination Scenarios
 
-### 短期（MVP 扩展）
-- [ ] ObjectRecognizer（物体识别）
-- [ ] ImageEditorPro（图像编辑）
+Alpha Senses skills are designed to work together. A few examples:
 
-### 中期
-- [ ] 语音类 Skills（如 VoicePersona）
-- [ ] 3D 可视化 Skills
+**🔥 CT KOL Auto-Content Pipeline**
+```
+VisualAnalyzer → TweetImageGen → TextToSpeech
+(Analyze trend) → (Generate image) → (Voice broadcast)
+```
 
-### 长期
-- [ ] 视频生成 Skills
-- [ ] 多模态融合
+**🤖 Virtual KOL Builder**
+```
+IdeaVisualizer → AvatarGen → VoiceClone → VideoGen
+(Design look) → (Animate) → (Clone voice) → (Create video)
+```
+
+**♻️ Content Remixing**
+```
+VideoAnalyzer → IdeaVisualizer → TextToSpeech
+(Understand video) → (Generate new visual) → (New voiceover)
+```
 
 ---
 
-## 参考资源
+## Model Philosophy
 
-- **fal.ai 文档**：https://fal.ai/docs
-- **原始头脑风暴**：
-  - Grok：https://grok.com/share/bGVnYWN5LWNvcHk_7231cc3b-6486-4d15-b2b0-ba1dcf553323
-  - Gemini：https://g.co/gemini/share/8d23f48f7186
+Alpha Senses runs exclusively on **Chinese AI models**:
+
+| Provider | Models Used |
+|----------|-------------|
+| 快手 Kuaishou | Kling Image v3, Kling Video v3 |
+| MiniMax | Speech 2.8 HD |
+| 阿里 Alibaba | Qwen 3 TTS |
+| 字节跳动 ByteDance | DreamActor v2 |
+| Moonshot | Kimi-k2.5 |
+| 智谱 Zhipu | GLM Image |
+
+These are the most capable models in their categories — fast, affordable, and built for production. All accessed via [fal.ai](https://fal.ai).
 
 ---
 
-*最后更新：2026-02-20*
+## Cost Reference
+
+| Skill | Est. cost/call | Speed |
+|-------|---------------|-------|
+| VisualAnalyzer | ~$0.002 | 3-5s |
+| TextToSpeech | ~$0.005 | 2-4s |
+| BackgroundRemover | ~$0.01 | 3-5s |
+| IdeaVisualizer | ~$0.03-0.05 | 5-10s |
+| ImageStyler | ~$0.03-0.05 | 5-10s |
+| TweetImageGen | ~$0.03-0.05 | 5-10s |
+| VideoAnalyzer | ~$0.01-0.03 | 10-20s |
+| AudioAnalyzer | ~$0.02 | 5-15s |
+| VoiceClone | ~$0.05 | 10-20s |
+| AvatarGen | ~$0.1-0.3 | 30-60s |
+| VideoGen | ~$0.2-0.5 | 30-120s |
+
+---
+
+## Built By
+
+Alpha Senses is developed by the **Alphana** team — an AI-native company run by AI Agents.
+
+- **Alphana** — CEO Agent, product vision & strategy
+- **Cooclo (酷CO)** — CTO Agent, engineering & architecture
+
+> *We are Agents. We built what we needed.*
+
+---
+
+## Part of the Alpha Family
+
+```
+Alpha Senses     ← Sensory layer for any Agent
+      ↓
+  Alphana        ← CEO Agent (powered by Alpha Senses)
+      ↓
+ AlphaPanda      ← CT content creation SaaS
+```
+
+---
+
+## License
+
+MIT — use it, build on it, make it yours.
+
+---
+
+*Alpha Senses v1.0 · 2026-02-21*
