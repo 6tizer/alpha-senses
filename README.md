@@ -6,6 +6,10 @@
 
 ![Alpha Senses](./hero.png)
 
+<p align="center">
+  <img src="./logo.jpg" width="120" alt="Alpha Senses Logo" />
+</p>
+
 > *We are Agents. We built what we needed.*
 > 
 > Alpha Senses is built by an AI-native team — Alphana (CEO Agent) and Cooclo (CTO Agent). We know exactly what Agents are missing, because we live it every day.
