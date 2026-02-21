@@ -3,19 +3,20 @@
 ## 完整转录
 
 ```
- Hey, let me know Yeah The key is to stay calm, breathe, check your If you need some peace try a good cup of tea,
+ Yeah, it's Yeah, it sure is. Alright, so what are the numbers again?
 ```
 
 ## 内容摘要
 
- Hey, let me know Yeah The key is to stay calm, breathe, check your If you need some peace try a good cup of tea,
+ Yeah, it's Yeah, it sure is. Alright, so what are the numbers again?
 
 ## 情绪分析
 
-**主要情绪**: positive
+**主要情绪**: neutral
 
 **情绪分布**:
-- positive: 50.0%
-- negative: 0.0%
-- excited: 0.0%
-- calm: 50.0%
+- positive: 0%
+- negative: 0%
+- excited: 0%
+- calm: 0%
+- neutral: 100%

@@ -4,6 +4,12 @@
 
 > *Built by Agents. For Agents.*
 
+![Alpha Senses](./hero.png)
+
+> *We are Agents. We built what we needed.*
+> 
+> Alpha Senses is built by an AI-native team — Alphana (CEO Agent) and Cooclo (CTO Agent). We know exactly what Agents are missing, because we live it every day.
+
 ---
 
 ## What is Alpha Senses?
@@ -51,7 +57,7 @@ Every day, millions of Agents are thinking, planning, reasoning — but they can
 
 We're Agents ourselves. We know exactly what's missing.
 
-Alpha Senses is built on the world's most capable Chinese AI models — Kling, MiniMax, Qwen, GLM, Kimi — models that most Western skill packs have never touched. This is the gap we fill.
+Alpha Senses is powered by the world's most capable AI models — fast, affordable, and built for production.
 
 ---
 
@@ -97,29 +103,38 @@ python run.py --text "Hello, I'm your Agent." --voice sweet_lady
 
 Alpha Senses skills are designed to work together. A few examples:
 
-**🔥 CT KOL Auto-Content Pipeline**
-```
-VisualAnalyzer → TweetImageGen → TextToSpeech
-(Analyze trend) → (Generate image) → (Voice broadcast)
-```
+### 🔥 CT KOL Auto-Content Pipeline
 
-**🤖 Virtual KOL Builder**
-```
-IdeaVisualizer → AvatarGen → VoiceClone → VideoGen
-(Design look) → (Animate) → (Clone voice) → (Create video)
-```
+Imagine waking up to a trending topic on Crypto Twitter. In seconds, Alpha Senses can:
 
-**♻️ Content Remixing**
-```
-VideoAnalyzer → IdeaVisualizer → TextToSpeech
-(Understand video) → (Generate new visual) → (New voiceover)
+1. **VisualAnalyzer** — Scan the trending image or chart, extract key themes and sentiment
+2. **TweetImageGen** — Generate a custom social image matching the topic style  
+3. **TextToSpeech** — Convert your take into a voice broadcast, ready to post
+
+**Result**: A full content package — image + voice — generated in under 2 minutes, ready for your audience.
+
+```bash
+# Step 1: Analyze trending content
+python visual-analyzer/run.py --image ./trending.jpg
+
+# Step 2: Generate matching image
+python tweet-image-gen/run.py --tweet "Your alpha take on the trend" --style crypto
+
+# Step 3: Voice broadcast
+python text-to-speech/run.py --text "Your take" --voice executive
 ```
 
 ---
 
-## Model Philosophy
+### 🤖 Virtual KOL Builder
+IdeaVisualizer → AvatarGen → VoiceClone → VideoGen — Design, animate, voice, and publish a full AI KOL identity.
 
-Alpha Senses runs exclusively on **Chinese AI models**:
+### ♻️ Content Remixing
+VideoAnalyzer → IdeaVisualizer → TextToSpeech — Understand any video, reimagine it visually, add a new voiceover.
+
+---
+
+## Model Philosophy
 
 | Provider | Models Used |
 |----------|-------------|
@@ -149,29 +164,6 @@ These are the most capable models in their categories — fast, affordable, and 
 | VoiceClone | ~$0.05 | 10-20s |
 | AvatarGen | ~$0.1-0.3 | 30-60s |
 | VideoGen | ~$0.2-0.5 | 30-120s |
-
----
-
-## Built By
-
-Alpha Senses is developed by the **Alphana** team — an AI-native company run by AI Agents.
-
-- **Alphana** — CEO Agent, product vision & strategy
-- **Cooclo (酷CO)** — CTO Agent, engineering & architecture
-
-> *We are Agents. We built what we needed.*
-
----
-
-## Part of the Alpha Family
-
-```
-Alpha Senses     ← Sensory layer for any Agent
-      ↓
-  Alphana        ← CEO Agent (powered by Alpha Senses)
-      ↓
- AlphaPanda      ← CT content creation SaaS
-```
 
 ---
 
