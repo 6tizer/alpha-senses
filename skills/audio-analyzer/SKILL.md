@@ -1,12 +1,7 @@
 ---
 name: audio-analyzer
-description: 将音频转换为文字并分析情绪和生成内容摘要
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: audio
-  updated: 2026-02-21
+description: "Analyze audio files and extract transcript, emotion, and key insights using MiniMax Speech Recognition."
+version: "1.0.0"
 ---
 
 # AudioAnalyzer

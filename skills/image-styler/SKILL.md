@@ -1,12 +1,7 @@
 ---
 name: image-styler
-description: 将图片转换成赛博朋克、动漫、电影感等指定艺术风格
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: image-generation
-  updated: 2026-02-21
+description: "Transform images into artistic styles like cyberpunk, anime, or cinematic looks."
+version: "1.0.0"
 ---
 
 # ImageStyler

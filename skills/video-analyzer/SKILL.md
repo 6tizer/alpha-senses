@@ -1,12 +1,7 @@
 ---
 name: video-analyzer
-description: 使用 Moonshot Kimi-k2.5 多模态模型分析视频内容并生成结构化报告
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: video-analysis
-  updated: 2026-02-21
+description: "Analyze video content using Moonshot Kimi-k2.5 multimodal model and generate structured reports."
+version: "1.0.0"
 ---
 
 # VideoAnalyzer

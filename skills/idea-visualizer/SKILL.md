@@ -1,12 +1,7 @@
 ---
 name: idea-visualizer
-description: 将文字想法转换为高质量图像，支持多模型对比
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: image-generation
-  updated: 2026-02-21
+description: "Transform text ideas into high-quality images with multi-model comparison support."
+version: "1.0.0"
 ---
 
 # IdeaVisualizer

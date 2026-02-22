@@ -1,12 +1,7 @@
 ---
 name: bg-remover
-description: 智能去除图片背景，保留主体内容
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: image-generation
-  updated: 2026-02-21
+description: "Intelligently remove image backgrounds while preserving the main subject."
+version: "1.0.0"
 ---
 
 # BackgroundRemover

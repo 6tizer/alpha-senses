@@ -1,12 +1,7 @@
 ---
 name: avatar-gen
-description: 将人物图片转换为动态 Avatar 视频，支持自定义动作参考
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: video-generation
-  updated: 2026-02-21
+description: "Convert portrait photos into animated avatar videos with customizable motion references."
+version: "1.0.0"
 ---
 
 # AvatarGen

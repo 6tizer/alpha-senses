@@ -1,12 +1,7 @@
 ---
 name: video-gen
-description: 通过文字描述或参考图片生成 AI 短视频
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: video-generation
-  updated: 2026-02-21
+description: "Generate AI short videos from text descriptions or reference images."
+version: "1.0.0"
 ---
 
 # VideoGen

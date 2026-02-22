@@ -1,12 +1,7 @@
 ---
 name: text-to-speech
-description: 将文字转换为自然语音，支持多种中文音色和情绪
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: audio
-  updated: 2026-02-21
+description: "Convert text to natural speech with multiple Chinese voices and emotion support."
+version: "1.0.0"
 ---
 
 # TextToSpeech

@@ -1,12 +1,7 @@
 ---
 name: tweet-image-gen
-description: 根据推文内容和风格自动生成社交媒体配图
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: image-generation
-  updated: 2026-02-21
+description: "Automatically generate social media images based on tweet content and style."
+version: "1.0.0"
 ---
 
 # TweetImageGen

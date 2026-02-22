@@ -1,12 +1,7 @@
 ---
 name: voice-clone
-description: 克隆声音样本并合成指定文字内容的语音
-license: MIT
-metadata:
-  version: 1.0.0
-  author: 6tizer
-  category: audio
-  updated: 2026-02-21
+description: "Clone voice samples and synthesize speech with specified text content."
+version: "1.0.0"
 ---
 
 # VoiceClone
